@@ -4,7 +4,7 @@ typedef struct heap {
 	int size;
 	int next;
 	int* values;
-	bool error;
+	int error;
 }heap_t;
 
 /**
@@ -13,10 +13,14 @@ typedef struct heap {
 */
 heap_t* createHeap() {
 	heap_t* h = (heap_t*)calloc(1, sizeof(heap_t));
+	if (h == NULL) {                               //kein speicher um heap zu erstellen
+		printf("Heap konnte nicht erstellt werden!\n");
+		exit(EXIT_FAILURE);
+	}
 	h->size = 1;
 	h->next = 0;
 	h->values = (int*)calloc(1, sizeof(int));
-	h->error = false;
+	h->error = 0;
 	return h;
 }
 
