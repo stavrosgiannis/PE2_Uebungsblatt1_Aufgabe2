@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PE2_Uebungsblatt1_Aufgabe2.c">
+    <ClCompile Include="heap.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="heap.c">
+    <ClCompile Include="main.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

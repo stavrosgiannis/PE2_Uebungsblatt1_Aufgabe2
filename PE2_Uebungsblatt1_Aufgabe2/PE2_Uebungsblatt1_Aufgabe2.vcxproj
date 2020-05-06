@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="heap.c" />
-    <ClCompile Include="PE2_Uebungsblatt1_Aufgabe2.c" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heap.h" />

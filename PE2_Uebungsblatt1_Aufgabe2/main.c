@@ -4,10 +4,13 @@
 
 int main()
 {
-	heap_t* heap = createHeap();
-	printf("heap:\t%p\n", heap);
-
+	heap_t* heap = create_heap();
 	insert(heap, 10);
+	insert(heap, 20);
+	insert(heap, 30);
+	insert(heap, 40);
+	printf("%s", toString(heap));
+	destroyHeap(heap);
 
-	return 0;
+	return EXIT_SUCCESS;
 }
